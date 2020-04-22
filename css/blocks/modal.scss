@@ -1,0 +1,35 @@
+
+.fade-modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    opacity: 0.5;
+    background-color: #000;
+    display:none;
+    
+}
+
+.modal{
+    position: fixed;
+    width: 50vw;
+    min-width: 500px;
+    height: 80vh;
+    z-index: 10;
+    background-color: white;
+    margin-top: 10vh;
+    transform: translateY(-100vh);
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+/*Active animation*/
+.modal.active-modal{
+    transform: translateY(0);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(283deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(2,156,218,1) 57%, rgba(0,212,255,1) 89%);
+}

@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/main.css">
+    <script src="https://kit.fontawesome.com/8e2f0401b1.js" crossorigin="anonymous"></script>
     <title>Galery</title>
 </head>
 <body>
     
-    <div class="fade-modal">
 
+    <img id = "loader" src="./Rolling-1.1s-204px.svg" alt="" srcset="">
+
+    <div class="fade-modal">
+      
     </div>
 
     <div class="modal">
         <img src="" alt="">
+        <div class="modal-controls">
+            <div id = "previous-action" class="modal-action">
+                <i class="fas fa-arrow-left icon-conf"></i>
+            </div>
+            
+            <div id = "next-action" class="modal-action">
+                <i class="fas fa-arrow-right icon-conf"></i>
+            </div>
+        </div>
     </div>
 
     <div class="gallery-container">
-        <div class="fade">
+       <!--  <div class="fade">
             <img src="https://images.pexels.com/photos/2261165/pexels-photo-2261165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
             <div class="controls">
                 <div class="max-size">
@@ -39,9 +52,9 @@
                     <p>-</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="fade">
+        <!-- <div class="fade">
                <img src="https://images.pexels.com/photos/2480854/pexels-photo-2480854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
         </div>
         <div class="fade"> 
@@ -70,10 +83,12 @@
         </div>
         <div class="fade">
             <img src="https://images.pexels.com/photos/191429/pexels-photo-191429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-        </div>
+        </div> -->
+        
+       
     </div>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.js" type="module"></script>
 
 </body>
 </html>

@@ -21,12 +21,52 @@
     transform: translateY(-100vh);
     box-shadow: 10px 10px 10px black;
     transition: all 0.5s ease-in-out;
+    
+
+    .modal-controls{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .modal-action{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 1);
+            border: 7px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+
+
+            .icon-conf{
+                color: white;
+                font-size: 3em;
+            }
+
+        }
+
+    }
+
 }
 
 /*Active animation*/
 .modal.active-modal{
     transform: translateY(0);
 }
+
+
+
 
 body{
     display: flex;

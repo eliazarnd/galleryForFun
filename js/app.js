@@ -1,5 +1,5 @@
 //Import modules dor application
-import requestAPIService from "./requestAPIService.js";
+
 import customModal from './modal.js';
 import Gallery from './gallery.js';
 
@@ -17,7 +17,6 @@ const loader = document.querySelector("#loader");
 
 const gallery = new Gallery(".gallery-container", modal);
 console.log(gallery);
-
 
 nextAction.addEventListener("click", function(e){    
     modal.nextAction();

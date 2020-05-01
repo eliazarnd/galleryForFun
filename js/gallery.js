@@ -39,8 +39,8 @@ createObserver = () =>{
 }
     
 async getImagesFromAPI(page = 1){
-
-    const url = `https://pixabay.com/api/?key=${this.credentials.API_KEY}&q=dogs+cats&per_page=5&page=${this.page}`;    
+    debugger;
+    const url = `https://pixabay.com/api/?key=${this.credentials.API_KEY}&q=dogs&per_page=5&page=${this.page}`;    
     
     const API = new requestAPIService(url);
     

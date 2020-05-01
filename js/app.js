@@ -1,5 +1,4 @@
 //Import modules dor application
-
 import customModal from './modal.js';
 import Gallery from './gallery.js';
 
